@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kanvan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+
+
+    <header class="bg-orange-800 p-4">
+        <nav>
+            <ul class="flex space-x-10 text-lg">
+                <li><a href="inicio.html" class="hover:text-orange-500">Iniciar Sesion</a></li>
+    
+            </ul>
+        </nav>
+        <h1 class="text-center text-2xl font-bold">TAREAS</h1>
+    </header>
+
+
+    <section class="bg-orange-500 shadow-md p-6 rounded-lg">
+        <h2 class="text-xl font-bold mb-4"> Ingresa la nueva tarea</h2>
+        <form id="formTarea" class="space-y-4"></form>
+
+        <div>
+            <label for="titulo" class="block text-sm font-medium">TITULO DE LA TAREA</label>
+            <input type="text" id="titulo" name="titulo" placeholder="ingresa el titulo de la tarea"
+                class="w-full border-gray-700 bg-orange-300 text-gray-100 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+      
+
+            <div>
+                <label for="descripcion" class="block text-sm font-medium">DESCRIPCION DE LA TAREA</label>
+                <input type="text" id="descripcion" name="descripcion" placeholder="ingresa la descripcion de la tarea"
+                    class="w-full border-gray-700 bg-orange-300 text-gray-100 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="tarea" class="block text-sm font-medium">TAREA</label>
+                <textarea id="tarea" name="tarea" placeholder="ingresa aca tu nueva tarea"
+                    class="w-full border-gray-700 bg-orange-300 text-gray-100 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+            <button type="submit" id="enviarT"
+                class="bg-orange-800 text-white py-2 px-4 rounded-md shadow-md hover: bg-orange-300 transition">
+                Agregar Tareas
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <br> <br> <br> <br> <h1 class="text-4xl bg-orange-200 container mx-auto px-3 py-6">tablero kanvan</h1>
+        <div class=" bg-orange-500 container mx-auto">
+          <h1 class="text-4xl font-semibold mb-8">Peticiones:</h1> </button></div>
+          <div class=" bg-orange-300 container mx-auto">
+            <h1 class="text-4xl font-semibold mb-8">Asignadas:</h1> </div>
+            <div class=" bg-orange-500  container mx-auto">
+                <h1 class="text-4xl font-semibold mb-8">Completadas:</h1> </div>
+                <button class="bg-orange-300 text-white py-3 px-6 rounded-md hover:bg-orange-600 transition"> Editar</button> 
+      </section>
+
+    <section>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-semibold mb-8">Mis tareas</h1>
+    <div id="tareaList" class="space-y-4"></div>
+    <div class=" mt-8">
+      <button onclick="cargartareas()"
+        class="bg-orange-300 text-white py-3 px-6 rounded-md hover:bg-orange-600 transition">Cargar Tareas</button>
+    </div>
+  </div>
+</section>
+    <script src="script.js"> </script>
+
+</html>

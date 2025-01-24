@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<header class="bg-orange-800 p-4">
+    <h1 class=" font-semibold text-center mb-6" >Momentus</h1>
+</header>
+
+<body class="bg-orange-100 text-black">
+
+   
+   
+    <div class="max-w-md mx-auto mt-24 bg-orange-500 p-8 rounded-lg shadow-lg">
+        <h2 id="form-title" class="text-3xl font-semibold text-center mb-6">Iniciar sesión</h2>
+
+        <form id="form-usuario" class="space-y-6">
+            <div>
+                <label for="username" class="block text-sm font-medium">Nombre de usuario</label>
+                <input type="text" id="username" name="username" class="w-full p-3 bg-orange-300 border border-gray-700 rounded-md" required>
+            </div>
+
+       
+            <div>
+                <label for="password" class="block text-sm font-medium">Contraseña</label>
+                <input type="password" id="password" name="password" class="w-full p-3 bg bg-orange-300 border border-gray-700 rounded-md" required>
+            </div>
+
+      
+            <div class="text-center">
+                <button type="submit" id="submit-btn" class="bg-orange-800 text-white py-3 px-6 rounded-md">Iniciar sesión</button>
+            </div>
+        </form>
+        <div class="text-center mt-4">
+            <p id="toggle-text">¿No tienes cuenta? <a href="inicio.html" id="toggle-link" class="text-black hover:underline">Regístrate</a></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
